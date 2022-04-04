@@ -70,30 +70,52 @@
                     <div class="modal-body">
                       <form>
                         <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label"
-                            >Email address</label
+                          <label for="projectName" class="form-label"
+                            >Project Name</label
                           >
                           <input
-                            type="email"
+                            type="text"
                             class="form-control"
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"
+                            id="projectName"
+                            aria-describedby="project-name"
                           />
-                          <div id="emailHelp" class="form-text">
-                            We'll never share your email with anyone else.
+                          <div id="project-name" class="form-text">
+                            name of the project you are working on
                           </div>
                         </div>
-                        <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label"
-                            >Password</label
-                          >
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>Project Type</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                        <div>Hourly Rate</div>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text">$</span>
+                          <input
+                            type="number"
+                            class="form-control"
+                            aria-label="Dollar amount (with dot and two decimal places)"
+                          />
+                        </div>
+                        <div>
+                          <p>Due Date <input type="text" id="datepicker" /></p>
+                        </div>
+
+                        <!-- <div class="mb-3">
+                          <label for="projecttype" class="form-label"
+                            >Project Type
+                          </label>
                           <input
                             type="password"
                             class="form-control"
                             id="exampleInputPassword1"
                           />
-                        </div>
-                        <div class="mb-3 form-check">
+                        </div> -->
+                        <!-- <div class="mb-3 form-check">
                           <input
                             type="checkbox"
                             class="form-check-input"
@@ -102,23 +124,14 @@
                           <label class="form-check-label" for="exampleCheck1"
                             >Check me out</label
                           >
-                        </div>
+                        </div> -->
                         <button type="submit" class="btn btn-primary">
                           Submit
                         </button>
                       </form>
                     </div>
                     <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                      <button type="button" class="btn btn-primary">
-                        Save changes
-                      </button>
+                      <p>Please enter all the details</p>
                     </div>
                   </div>
                 </div>
@@ -139,7 +152,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <!-- <tr>
                 <th scope="row">1</th>
                 <td>Mark</td>
                 <td>Otto</td>
@@ -156,7 +169,7 @@
                 <td>Larry</td>
                 <td>the Bird</td>
                 <td>@twitter</td>
-              </tr>
+              </tr> -->
             </tbody>
           </table>
         </section>
